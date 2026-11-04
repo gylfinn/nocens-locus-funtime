@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+/* Item-tooltip world: colours carry the tooltip's own meanings. */
+@theme {
+  --font-sans: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
+
+  --color-void: #05060a; /* page ground */
+  --color-tip: #0a0b12; /* tooltip panel */
+  --color-edge: #5b6175; /* tooltip edge */
+  --color-ink: #ffffff; /* stat lines */
+  --color-poor: #9d9d9d; /* poor quality: left out, secondary text */
+  --color-epic: #b25bff; /* the item's name (epic, lifted for contrast) */
+  --color-uncommon: #1eff00; /* "Use:" lines and ready: the one reserved colour */
+  --color-gold: #ffd100; /* actions and the focus ring */
+  --color-req: #ff4040; /* unmet requirements: errors */
+  --color-bronze: #3a2f0c;
+  --color-bronze-deep: #241d07;
+  --color-bronze-edge: #8a7432;
+}
+
+html {
+  background: var(--color-void);
+  color: var(--color-ink);
+  color-scheme: dark;
+  scrollbar-color: #3a3f4e var(--color-void);
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(900px 620px at 28% 32%, #171c30 0%, #0b0d16 58%, var(--color-void) 100%) fixed;
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: rgb(178 91 255 / 0.45);
+  color: #fff;
+}
+
+input {
+  caret-color: var(--color-gold);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+@layer components {
+  /* An item tooltip: dark panel, cool-grey edge, black outer hairline. */
+  .tip {
+    position: relative;
+    background: rgb(8 9 16 / 0.94);
+    border: 1px solid var(--color-edge);
+    border-radius: 6px;
+    outline: 1px solid #000;
+    box-shadow: 0 18px 50px rgb(0 0 0 / 0.6);
+  }
+
+  /* An empty item slot: the same frame, dashed and quieter. */
+  .slot {
+    border: 1px dashed #4a4f5f;
+    border-radius: 6px;
+    background: rgb(8 9 16 / 0.6);
+  }
+
+  .btn-gold {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 2.5rem;
+    padding: 0 1.125rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-bronze-edge);
+    background: linear-gradient(var(--color-bronze), var(--color-bronze-deep));
+    color: var(--color-gold);
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: border-color 150ms, background-color 150ms;
+  }
+  .btn-gold:hover {
+    border-color: #c9a640;
+    background: linear-gradient(#4a3c10, #2e250a);
+  }
+  .btn-gold:active {
+    translate: 0 1px;
+  }
+
+  .btn-quiet {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    height: 2.5rem;
+    padding: 0 0.875rem;
+    border-radius: 4px;
+    border: 1px solid #3a3f4e;
+    background: #11131c;
+    color: #d6d8de;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: border-color 150ms, color 150ms;
+  }
+  .btn-quiet:hover {
+    border-color: var(--color-edge);
+    color: #fff;
+  }
+
+  .link-quiet {
+    color: var(--color-poor);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .link-quiet:hover {
+    color: #fff;
+  }
+}
+
+/*
+ * The signature moment: when a verified guide lands, each copy's "Binds to"
+ * shows the original's tag, then wipes over to the friend's, row by row
+ * (--rebind-delay is set per row), while the item name lifts to epic.
+ */
+.rebind {
+  display: inline-grid;
+  vertical-align: bottom;
+}
+.rebind > * {
+  grid-area: 1 / 1;
+}
+.rebind-from {
+  color: var(--color-poor);
+  animation: rebind-out 320ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(260ms + var(--rebind-delay, 0ms));
+}
+.rebind-from + .rebind-to {
+  animation: rebind-in 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(260ms + var(--rebind-delay, 0ms));
+}
+.rebind-quality {
+  animation: rebind-quality 520ms ease-out both;
+  animation-delay: calc(260ms + var(--rebind-delay, 0ms));
+}
+/* Ready and Download appear as the friend's tag lands (hidden, so not clickable, until then). */
+.rebind-reveal {
+  animation: rebind-reveal 240ms ease-out both;
+  animation-delay: calc(620ms + var(--rebind-delay, 0ms));
+}
+@keyframes rebind-reveal {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes rebind-out {
+  to {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+@keyframes rebind-in {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+}
+@keyframes rebind-quality {
+  from {
+    color: var(--color-poor);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rebind-from {
+    display: none;
+  }
+  .rebind-from + .rebind-to,
+  .rebind-quality,
+  .rebind-reveal {
+    animation: none;
+  }
+}
+
+/* The include checkbox, drawn in the tooltip's own frame. */
+.check {
+  appearance: none;
+  width: 1.375rem;
+  height: 1.375rem;
+  flex-shrink: 0;
+  border: 1px solid var(--color-edge);
+  border-radius: 3px;
+  background: #11131c center / 16px no-repeat;
+  cursor: pointer;
+  transition: border-color 150ms;
+}
+.check:hover:not(:disabled) {
+  border-color: #8a90a3;
+}
+.check:checked {
+  border-color: var(--color-bronze-edge);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffd100' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+.check:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Labels that wrap a visually hidden file input show the input's keyboard focus. */
+.focus-within-ring:has(:focus-visible) {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+.btn-quiet:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

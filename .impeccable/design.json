@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-04T12:44:54.339Z",
+  "title": "Design System: Nocens Locus Funtime",
+  "extensions": {
+    "colorMeta": {
+      "epic": {
+        "role": "primary",
+        "displayName": "Epic Purple",
+        "canonical": "#b25bff",
+        "tonalRamp": [
+          "oklch(15% 0.24 305)",
+          "oklch(26% 0.24 305)",
+          "oklch(38% 0.24 305)",
+          "oklch(49% 0.24 305)",
+          "oklch(61% 0.24 305)",
+          "oklch(72% 0.24 305)",
+          "oklch(84% 0.24 305)",
+          "oklch(95% 0.24 305)"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Tooltip Gold",
+        "canonical": "#ffd100",
+        "tonalRamp": [
+          "oklch(15% 0.18 92)",
+          "oklch(26% 0.18 92)",
+          "oklch(38% 0.18 92)",
+          "oklch(49% 0.18 92)",
+          "oklch(61% 0.18 92)",
+          "oklch(72% 0.18 92)",
+          "oklch(84% 0.18 92)",
+          "oklch(95% 0.18 92)"
+        ]
+      },
+      "uncommon": {
+        "role": "secondary",
+        "displayName": "Uncommon Green",
+        "canonical": "#1eff00",
+        "tonalRamp": [
+          "oklch(15% 0.29 142)",
+          "oklch(26% 0.29 142)",
+          "oklch(38% 0.29 142)",
+          "oklch(49% 0.29 142)",
+          "oklch(61% 0.29 142)",
+          "oklch(72% 0.29 142)",
+          "oklch(84% 0.29 142)",
+          "oklch(95% 0.29 142)"
+        ]
+      },
+      "req": {
+        "role": "tertiary",
+        "displayName": "Requirement Red",
+        "canonical": "#ff4040",
+        "tonalRamp": [
+          "oklch(15% 0.22 25)",
+          "oklch(26% 0.22 25)",
+          "oklch(38% 0.22 25)",
+          "oklch(49% 0.22 25)",
+          "oklch(61% 0.22 25)",
+          "oklch(72% 0.22 25)",
+          "oklch(84% 0.22 25)",
+          "oklch(95% 0.22 25)"
+        ]
+      },
+      "void": {
+        "role": "neutral",
+        "displayName": "Void",
+        "canonical": "#05060a",
+        "tonalRamp": [
+          "oklch(15% 0.01 275)",
+          "oklch(26% 0.01 275)",
+          "oklch(38% 0.01 275)",
+          "oklch(49% 0.01 275)",
+          "oklch(61% 0.01 275)",
+          "oklch(72% 0.01 275)",
+          "oklch(84% 0.01 275)",
+          "oklch(95% 0.01 275)"
+        ]
+      },
+      "tip": {
+        "role": "neutral",
+        "displayName": "Tooltip Black",
+        "canonical": "#0a0b12",
+        "tonalRamp": [
+          "oklch(15% 0.015 280)",
+          "oklch(26% 0.015 280)",
+          "oklch(38% 0.015 280)",
+          "oklch(49% 0.015 280)",
+          "oklch(61% 0.015 280)",
+          "oklch(72% 0.015 280)",
+          "oklch(84% 0.015 280)",
+          "oklch(95% 0.015 280)"
+        ]
+      },
+      "edge": {
+        "role": "neutral",
+        "displayName": "Cool Edge",
+        "canonical": "#5b6175",
+        "tonalRamp": [
+          "oklch(15% 0.03 270)",
+          "oklch(26% 0.03 270)",
+          "oklch(38% 0.03 270)",
+          "oklch(49% 0.03 270)",
+          "oklch(61% 0.03 270)",
+          "oklch(72% 0.03 270)",
+          "oklch(84% 0.03 270)",
+          "oklch(95% 0.03 270)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Stat White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "poor": {
+        "role": "neutral",
+        "displayName": "Poor Grey",
+        "canonical": "#9d9d9d",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "well": {
+        "role": "neutral",
+        "displayName": "Well",
+        "canonical": "#11131c",
+        "tonalRamp": [
+          "oklch(15% 0.02 275)",
+          "oklch(26% 0.02 275)",
+          "oklch(38% 0.02 275)",
+          "oklch(49% 0.02 275)",
+          "oklch(61% 0.02 275)",
+          "oklch(72% 0.02 275)",
+          "oklch(84% 0.02 275)",
+          "oklch(95% 0.02 275)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "#3a3f4e",
+        "tonalRamp": [
+          "oklch(15% 0.025 270)",
+          "oklch(26% 0.025 270)",
+          "oklch(38% 0.025 270)",
+          "oklch(49% 0.025 270)",
+          "oklch(61% 0.025 270)",
+          "oklch(72% 0.025 270)",
+          "oklch(84% 0.025 270)",
+          "oklch(95% 0.025 270)"
+        ]
+      },
+      "slot-edge": {
+        "role": "neutral",
+        "displayName": "Slot Edge",
+        "canonical": "#4a4f5f",
+        "tonalRamp": [
+          "oklch(15% 0.025 270)",
+          "oklch(26% 0.025 270)",
+          "oklch(38% 0.025 270)",
+          "oklch(49% 0.025 270)",
+          "oklch(61% 0.025 270)",
+          "oklch(72% 0.025 270)",
+          "oklch(84% 0.025 270)",
+          "oklch(95% 0.025 270)"
+        ]
+      },
+      "bronze": {
+        "role": "neutral",
+        "displayName": "Bronze",
+        "canonical": "#3a2f0c",
+        "tonalRamp": [
+          "oklch(15% 0.06 92)",
+          "oklch(26% 0.06 92)",
+          "oklch(38% 0.06 92)",
+          "oklch(49% 0.06 92)",
+          "oklch(61% 0.06 92)",
+          "oklch(72% 0.06 92)",
+          "oklch(84% 0.06 92)",
+          "oklch(95% 0.06 92)"
+        ]
+      },
+      "bronze-deep": {
+        "role": "neutral",
+        "displayName": "Bronze Deep",
+        "canonical": "#241d07",
+        "tonalRamp": [
+          "oklch(15% 0.05 92)",
+          "oklch(26% 0.05 92)",
+          "oklch(38% 0.05 92)",
+          "oklch(49% 0.05 92)",
+          "oklch(61% 0.05 92)",
+          "oklch(72% 0.05 92)",
+          "oklch(84% 0.05 92)",
+          "oklch(95% 0.05 92)"
+        ]
+      },
+      "bronze-edge": {
+        "role": "neutral",
+        "displayName": "Bronze Edge",
+        "canonical": "#8a7432",
+        "tonalRamp": [
+          "oklch(15% 0.09 90)",
+          "oklch(26% 0.09 90)",
+          "oklch(38% 0.09 90)",
+          "oklch(49% 0.09 90)",
+          "oklch(61% 0.09 90)",
+          "oklch(72% 0.09 90)",
+          "oklch(84% 0.09 90)",
+          "oklch(95% 0.09 90)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The guide name on the original tooltip, or \"No guide yet\" in the empty slot."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "The product name, once, top left."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "A friend's name on a copy; the #digits drop to 400 in poor grey."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Stat lines, status, the Use: line, the flavour line, the Copies heading (600, poor grey), the large gold button."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "The hint, quiet links, the empty-list prompt, add-field errors."
+      }
+    },
+    "shadows": [
+      {
+        "name": "tooltip-drop",
+        "value": "0 18px 50px rgb(0 0 0 / 0.6)",
+        "purpose": "Under every tooltip panel, paired with outline: 1px solid #000 as the outer hairline."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-rebind",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The rebind wipe via clip-path: original tag out over 320ms, friend's tag in over 420ms."
+      },
+      {
+        "name": "rebind-start",
+        "value": "calc(260ms + var(--rebind-delay, 0ms))",
+        "purpose": "When each row's wipe and the guide name's lift (520ms ease-out, poor grey to epic) begin."
+      },
+      {
+        "name": "rebind-stagger",
+        "value": "70ms",
+        "purpose": "Per-row --rebind-delay down the copies list."
+      },
+      {
+        "name": "rebind-reveal",
+        "value": "240ms ease-out, delay calc(620ms + var(--rebind-delay, 0ms))",
+        "purpose": "Status and Download stay hidden (visibility, so not clickable) until the friend's tag lands."
+      },
+      {
+        "name": "state",
+        "value": "150ms",
+        "purpose": "Border and colour transitions on buttons, checkbox and slot hover."
+      },
+      {
+        "name": "quality",
+        "value": "300ms",
+        "purpose": "Icon well and guide name colour change when the source verifies or fails."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "Under prefers-reduced-motion the rebind does not play and the final state shows at once."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Gold Button",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "The next action: Download on a live copy, Download both / all N at the foot.",
+      "html": "<button class=\"ds-btn-gold\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 15V3\"/><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><path d=\"m7 10 5 5 5-5\"/></svg>Download</button>",
+      "css": ".ds-btn-gold { font-family: var(--font-sans, Barlow, ui-sans-serif, system-ui, sans-serif); font-variant-numeric: tabular-nums; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; height: 2.5rem; padding: 0 1.125rem; border-radius: 4px; border: 1px solid var(--color-bronze-edge, #8a7432); background: linear-gradient(var(--color-bronze, #3a2f0c), var(--color-bronze-deep, #241d07)); color: var(--color-gold, #ffd100); font-size: 1rem; font-weight: 600; white-space: nowrap; cursor: pointer; transition: border-color 150ms, background-color 150ms; } .ds-btn-gold:hover { border-color: #c9a640; background: linear-gradient(#4a3c10, #2e250a); } .ds-btn-gold:active { translate: 0 1px; } .ds-btn-gold:focus-visible { outline: 2px solid var(--color-gold, #ffd100); outline-offset: 2px; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Secondary actions: Add, Done.",
+      "html": "<button class=\"ds-btn-quiet\">Add</button>",
+      "css": ".ds-btn-quiet { font-family: var(--font-sans, Barlow, ui-sans-serif, system-ui, sans-serif); font-variant-numeric: tabular-nums; display: inline-flex; align-items: center; justify-content: center; height: 2.5rem; padding: 0 0.875rem; border-radius: 4px; border: 1px solid #3a3f4e; background: #11131c; color: #d6d8de; font-size: 1rem; font-weight: 500; cursor: pointer; transition: border-color 150ms, color 150ms; } .ds-btn-quiet:hover { border-color: var(--color-edge, #5b6175); color: #fff; } .ds-btn-quiet:focus-visible { outline: 2px solid var(--color-gold, #ffd100); outline-offset: 2px; } .ds-btn-quiet:disabled { opacity: 0.45; cursor: not-allowed; }"
+    },
+    {
+      "name": "Quiet Link",
+      "kind": "button",
+      "refersTo": "",
+      "description": "Minor actions inside a tooltip: change, Choose another file, Undo.",
+      "html": "<button class=\"ds-link\">change</button>",
+      "css": ".ds-link { font-family: var(--font-sans, Barlow, ui-sans-serif, system-ui, sans-serif); font-variant-numeric: tabular-nums; border: 0; padding: 0; background: none; font-size: 1rem; color: var(--color-poor, #9d9d9d); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; } .ds-link:hover { color: #fff; } .ds-link:focus-visible { outline: 2px solid var(--color-gold, #ffd100); outline-offset: 2px; }"
+    },
+    {
+      "name": "Source Tag Input",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Typing the BattleTag the original is bound to.",
+      "html": "<label class=\"ds-field\">Binds to <input class=\"ds-input\" placeholder=\"Name#1234\" spellcheck=\"false\"></label>",
+      "css": ".ds-field { font-family: var(--font-sans, Barlow, ui-sans-serif, system-ui, sans-serif); font-variant-numeric: tabular-nums; display: inline-flex; align-items: center; gap: 0.75rem; color: #fff; font-size: 1.125rem; } .ds-input { font: inherit; height: 2.5rem; width: 14rem; padding: 0 0.75rem; border-radius: 4px; border: 1px solid #3a3f4e; background: #11131c; color: #fff; caret-color: var(--color-gold, #ffd100); } .ds-input::placeholder { color: var(--color-poor, #9d9d9d); } .ds-input:focus-visible { border-color: var(--color-gold, #ffd100); outline: 2px solid var(--color-gold, #ffd100); outline-offset: 2px; }"
+    },
+    {
+      "name": "Include Checkbox",
+      "kind": "custom",
+      "refersTo": "check",
+      "description": "Whether a friend gets a copy, drawn in the tooltip frame.",
+      "html": "<input type=\"checkbox\" class=\"ds-check\" checked aria-label=\"Make a copy\"> <input type=\"checkbox\" class=\"ds-check\" aria-label=\"Leave out\">",
+      "css": ".ds-check { appearance: none; width: 1.375rem; height: 1.375rem; vertical-align: middle; border: 1px solid var(--color-edge, #5b6175); border-radius: 3px; background: #11131c center / 16px no-repeat; cursor: pointer; transition: border-color 150ms; } .ds-check:hover { border-color: #8a90a3; } .ds-check:checked { border-color: var(--color-bronze-edge, #8a7432); background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffd100' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E\"); } .ds-check:focus-visible { outline: 2px solid var(--color-gold, #ffd100); outline-offset: 2px; }"
+    },
+    {
+      "name": "Original Tooltip",
+      "kind": "card",
+      "refersTo": "tooltip",
+      "description": "The guide as an item bound to the owner: icon well, name, Binds to, stat lines, Use: line, flavour line.",
+      "html": "<div class=\"ds-tip\"><div class=\"ds-tip-head\"><span class=\"ds-well\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 12h-5\"/><path d=\"M15 8h-5\"/><path d=\"M19 17V5a2 2 0 0 0-2-2H4\"/><path d=\"M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3\"/></svg></span><p class=\"ds-tip-name\">Midnight Leveling Guide</p></div><p>Binds to player#1234</p><p class=\"ds-stat\"><span>Guide export</span><span>869 guides</span></p><p class=\"ds-stat\"><span>Size</span><span>638 KB</span></p><p class=\"ds-use\">Use: Make a copy bound to each friend.</p><p class=\"ds-flavour\">“Made for one. Copied for the whole party.”</p></div>",
+      "css": ".ds-tip { font-family: var(--font-sans, Barlow, ui-sans-serif, system-ui, sans-serif); font-variant-numeric: tabular-nums; background: rgb(8 9 16 / 0.94); border: 1px solid var(--color-edge, #5b6175); border-radius: 6px; outline: 1px solid #000; box-shadow: 0 18px 50px rgb(0 0 0 / 0.6); max-width: 470px; padding: 1.25rem 1.5rem; color: #fff; font-size: 1.125rem; line-height: 1.375; } .ds-tip p { margin: 0; } .ds-tip-head { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 0.75rem; } .ds-well { display: grid; place-items: center; width: 3.5rem; height: 3.5rem; flex-shrink: 0; border-radius: 4px; border: 1px solid var(--color-epic, #b25bff); background: #11131c; color: var(--color-epic, #b25bff); } .ds-tip-name { font-size: 30px; font-weight: 600; line-height: 1.25; color: var(--color-epic, #b25bff); } .ds-stat { display: flex; justify-content: space-between; gap: 1rem; } .ds-tip .ds-use { margin-top: 0.5rem; color: var(--color-uncommon, #1eff00); } .ds-tip .ds-flavour { margin-top: 0.5rem; font-style: italic; color: var(--color-poor, #9d9d9d); }"
+    },
+    {
+      "name": "Copy Row",
+      "kind": "custom",
+      "refersTo": "tooltip",
+      "description": "One friend's copy: name, guide, Binds to, status at a fixed right edge, Download in a reserved 8.5rem column.",
+      "html": "<div class=\"ds-copy\"><input type=\"checkbox\" class=\"ds-copy-check\" checked aria-label=\"Make a copy for Sóni#2342\"><div><p class=\"ds-copy-name\">Sóni<span>#2342</span></p><p class=\"ds-copy-guide\">Midnight Leveling Guide</p><p class=\"ds-copy-line\"><span>Binds to Sóni#2342</span><span class=\"ds-ready\">Ready</span></p></div><button class=\"ds-copy-btn\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 15V3\"/><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><path d=\"m7 10 5 5 5-5\"/></svg>Download</button></div>",
+      "css": ".ds-copy { font-family: var(--font-sans, Barlow, ui-sans-serif, system-ui, sans-serif); font-variant-numeric: tabular-nums; background: rgb(8 9 16 / 0.94); border: 1px solid var(--color-edge, #5b6175); border-radius: 6px; outline: 1px solid #000; box-shadow: 0 18px 50px rgb(0 0 0 / 0.6); display: grid; grid-template-columns: auto minmax(0, 1fr) 8.5rem; align-items: center; column-gap: 1rem; padding: 1rem 3.5rem 1rem 1rem; color: #fff; font-size: 1.125rem; line-height: 1.375; } .ds-copy p { margin: 0; } .ds-copy-check { appearance: none; align-self: start; margin-top: 4px; width: 1.375rem; height: 1.375rem; border: 1px solid var(--color-bronze-edge, #8a7432); border-radius: 3px; background: #11131c center / 16px no-repeat url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffd100' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E\"); } .ds-copy-name { font-size: 22px; font-weight: 600; } .ds-copy-name span { font-weight: 400; color: var(--color-poor, #9d9d9d); } .ds-copy-guide { color: var(--color-epic, #b25bff); } .ds-copy-line { display: flex; justify-content: space-between; gap: 1rem; } .ds-ready { color: var(--color-uncommon, #1eff00); } .ds-copy-btn { font: inherit; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; height: 2.5rem; padding: 0 1.125rem; border-radius: 4px; border: 1px solid var(--color-bronze-edge, #8a7432); background: linear-gradient(var(--color-bronze, #3a2f0c), var(--color-bronze-deep, #241d07)); color: var(--color-gold, #ffd100); font-size: 1rem; font-weight: 600; white-space: nowrap; cursor: pointer; transition: border-color 150ms, background-color 150ms; justify-self: end; } .ds-copy-btn:hover { border-color: #c9a640; background: linear-gradient(#4a3c10, #2e250a); } .ds-copy-btn:focus-visible { outline: 2px solid var(--color-gold, #ffd100); outline-offset: 2px; }"
+    },
+    {
+      "name": "Add-a-Friend Slot",
+      "kind": "input",
+      "refersTo": "slot",
+      "description": "An empty dashed item slot holding a borderless BattleTag input and a quiet Add.",
+      "html": "<form class=\"ds-slot\" onsubmit=\"return false\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"M12 5v14\"/></svg><input class=\"ds-slot-input\" placeholder=\"Add a friend, e.g. Name#1234\" aria-label=\"Friend's BattleTag\"><button class=\"ds-slot-btn\">Add</button></form>",
+      "css": ".ds-slot { font-family: var(--font-sans, Barlow, ui-sans-serif, system-ui, sans-serif); font-variant-numeric: tabular-nums; display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0.5rem 0.5rem 1rem; border: 1px dashed #4a4f5f; border-radius: 6px; background: rgb(8 9 16 / 0.6); color: var(--color-poor, #9d9d9d); transition: border-color 150ms; } .ds-slot:hover { border-color: var(--color-edge, #5b6175); } .ds-slot-input { flex: 1; min-width: 0; height: 2.5rem; border: 0; background: transparent; color: #fff; font: inherit; font-size: 1.125rem; caret-color: var(--color-gold, #ffd100); outline: none; } .ds-slot-input::placeholder { color: var(--color-poor, #9d9d9d); } .ds-slot-input:focus-visible { outline: 2px solid var(--color-gold, #ffd100); outline-offset: 2px; } .ds-slot-btn { font: inherit; height: 2.5rem; padding: 0 0.875rem; border-radius: 4px; border: 1px solid #3a3f4e; background: #11131c; color: #d6d8de; font-weight: 500; cursor: pointer; } .ds-slot-btn:hover { border-color: var(--color-edge, #5b6175); color: #fff; } .ds-slot-btn:focus-visible { outline: 2px solid var(--color-gold, #ffd100); outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Item Tooltip",
+    "overview": "Every surface is an item tooltip from the game the owner plays next to this page. The guide is an item; each friend's copy is the same item rebound to someone else. Containers are tooltip panels (near-black, a 1px cool-grey edge, a black outer hairline, small corners) or, where something is still to come, empty item slots (the same frame, dashed and quieter). Text colours are the tooltip's own: the item's name in epic purple, stat lines in white, the \"Use:\" line and Ready in uncommon green, left-out things in poor-quality grey, unmet requirements in red, and actions in tooltip gold on dark bronze buttons.\n\nDensity is a tooltip's: short lines, label left and value right, no decoration between rows. The one face is Barlow at four sizes, with tabular figures everywhere so tags, counts and sizes line up. Depth comes from a dark drop shadow under the panel and the black hairline around it; nothing glows.\n\nThe world's signature is the rebind: when a verified guide lands, each copy's \"Binds to\" line wipes from the original's tag to the friend's, row by row, while the item name lifts from poor grey to epic.",
+    "keyCharacteristics": [
+      "Tooltip panels and dashed item slots are the only containers.",
+      "Colour is meaning: each hue is an item-quality or tooltip-line colour, never decoration.",
+      "One face (Barlow), four sizes (30, 22, 18, 16px), tabular figures throughout.",
+      "Gold on bronze marks an action; gold also draws the focus ring.",
+      "A dark radial ground under everything; no glow, no colour on the shadow."
+    ],
+    "rules": [
+      {
+        "name": "The Tooltip Meaning Rule",
+        "body": "A colour enters only with the meaning it has in an item tooltip. If a hue has no tooltip meaning, it doesn't ship.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Green Rule",
+        "body": "Uncommon green is for ready and nothing else: the \"Use:\" line and a copy's Ready / Downloaded status. It is never a success toast, a link or a button.",
+        "section": "colors"
+      },
+      {
+        "name": "The Earned Epic Rule",
+        "body": "A guide name is epic only after its source has verified. Unverified, waiting or left out, it is poor grey. The colour change is the proof.",
+        "section": "colors"
+      },
+      {
+        "name": "The Four Sizes Rule",
+        "body": "Barlow at 30, 22, 18 and 16px, nothing else. A new element takes one of these sizes.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Figures are tabular everywhere (set on body), so tags, guide counts and sizes align down a column.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Glow Rule",
+        "body": "Shadows are black and fall downward. A quality colour never becomes a glow, halo or coloured shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do build every container as a tooltip (solid cool edge, black hairline, drop shadow) or a slot (dashed, flat), with 6px corners.",
+      "Do give each colour its tooltip meaning: epic for a verified item name, white for stat lines, green for ready, gold on bronze for actions, poor grey for left out and secondary, red for errors.",
+      "Do set text in Barlow at 30, 22, 18 or 16px with tabular figures.",
+      "Do lay stat lines out label left, value right, and keep a copy row's status ending at the same right edge in every state.",
+      "Do let the rebind wipe carry the proof that a copy is rebound, and show the final state at once under reduced motion.",
+      "Do draw focus as the 2px gold ring, including on labels that wrap hidden inputs."
+    ],
+    "donts": [
+      "Don't use uncommon green for anything but the \"Use:\" line and Ready / Downloaded.",
+      "Don't show a guide name in epic before its source has verified.",
+      "Don't give a shadow, border or text a coloured glow.",
+      "Don't add a second typeface or a fifth text size.",
+      "Don't add a hue that has no meaning in an item tooltip."
+    ]
+  }
+}
